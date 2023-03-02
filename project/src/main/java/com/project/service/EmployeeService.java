@@ -2,18 +2,21 @@ package com.project.service;
 
 import java.util.List;
 
-import com.project.model.Employe;
+import com.project.dto.EmployeeDto;
+import com.project.model.DataE;
 
 public interface EmployeeService {
 	
-	 List<Employe> getAllEmployee();
+	 List<DataE> getAllEmployee();
 	
-	 Employe getEmployeById(Long id);
+	 List<EmployeeDto> getPageEmployee(Integer pagenumber, Integer pageSize);
+	 
+	 DataE createEmployee(DataE data );
 	
-	 Employe saveEmploye(Employe employe);
+	 void deleteEmployee(Long id);
 	
-	 void delete(Long id);
-	
-	 void update(Employe employe,Long id);
+	 DataE updateEmployee(Long id,DataE dataE);
+	 
+	 DataE getEmployeeById(Long id);
 
 }

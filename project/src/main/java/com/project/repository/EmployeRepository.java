@@ -2,8 +2,8 @@ package com.project.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.project.model.Employe;
+import com.project.model.DataE;
 
-public interface EmployeRepository extends JpaRepository<Employe,Long> {
+public interface EmployeRepository extends JpaRepository<DataE,Long> {
 
 }
